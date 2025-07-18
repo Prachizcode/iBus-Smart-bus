@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>iBus - Smart Bus Schedule</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <form id="registerForm">
+      <input id="fullname" placeholder="full name" required/>
+      <input id="email" placeholder=" Email" required />
+      <input id="phone"placeholder="Phone  number" required />
+  <input  id="username" placeholder="Username" required />
+  <input  id="password" placeholder="Password" required />
+  <input id="conform password" placeholder="conformPassword" type="password" required />
+  <button type="submit">Register</button>
+  </form>
+
+  <form id="loginForm">
+   <input id="Loginusername" placeholder="Username" required />
+   <input id="Loginpassword" placeholder="password" required
+  />
+  <button type="submit">Login</button>
+  <button class="Logout" id="LogoutBtn">logout</button>
+  
+
+</form>
+   <div class="container">
+      <h1>🚌 iBus - Live Bus Schedule</h1>
+
+      <input 
+      type="text"
+       id="search"
+        placeholder="Search by route, city, or time..."
+        />
+
+      <label for="destinationFilter">Filter by Destination:</label>
+      <select id="destinationFilter">
+         <option value="">All Destinations</option>
+         <option value="Indore">Indore</option>
+         <option value="Gwalior">Gwalior</option>
+         <option value="Shivpuri">Shivpuri</option>
+         <option value="Bhopal">Bhopal</option>
+      </select>
+
+      <button id="filterButton">Apply Filter</button>
+
+      <div id="buslist" class="bus-list"></div>
+
+   </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
